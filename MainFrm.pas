@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
-  System.Generics.Collections, GameItems, Vcl.StdCtrls, ItemsLoader;
+  System.Generics.Collections, GameItems, Vcl.StdCtrls, ItemsLoader,
+  Vcl.ExtCtrls, Vcl.Imaging.GIFImg;
 
 type
   TForm1 = class(TForm)
@@ -43,6 +44,39 @@ type
     CheckBox31: TCheckBox;
     CheckBox32: TCheckBox;
     CheckBox33: TCheckBox;
+    Image1: TImage;
+    Image2: TImage;
+    Image3: TImage;
+    Image4: TImage;
+    Image5: TImage;
+    Image6: TImage;
+    Image7: TImage;
+    Image8: TImage;
+    Image9: TImage;
+    Image10: TImage;
+    Image11: TImage;
+    Image12: TImage;
+    Image13: TImage;
+    Image14: TImage;
+    Image15: TImage;
+    Image16: TImage;
+    Image17: TImage;
+    Image18: TImage;
+    Image19: TImage;
+    Image20: TImage;
+    Image21: TImage;
+    Image22: TImage;
+    Image23: TImage;
+    Image24: TImage;
+    Image25: TImage;
+    Image26: TImage;
+    Image27: TImage;
+    Image28: TImage;
+    Image29: TImage;
+    Image30: TImage;
+    Image31: TImage;
+    Image32: TImage;
+    Image33: TImage;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure CheckBox1Click(Sender: TObject);
@@ -84,6 +118,40 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   FLoader := TItemsLoader.Create;
   FLoader.LoadFromFile('rune.txt');
+
+  Image1.Picture.LoadFromFile('images\El.gif');
+  Image2.Picture.LoadFromFile('images\Eld.gif');
+  Image3.Picture.LoadFromFile('images\Tir.gif');
+  Image4.Picture.LoadFromFile('images\Nef.gif');
+  Image5.Picture.LoadFromFile('images\Eth.gif');
+  Image6.Picture.LoadFromFile('images\Ith.gif');
+  Image7.Picture.LoadFromFile('images\Tal.gif');
+  Image8.Picture.LoadFromFile('images\Ral.gif');
+  Image9.Picture.LoadFromFile('images\Ort.gif');
+  Image10.Picture.LoadFromFile('images\Thul.gif');
+  Image11.Picture.LoadFromFile('images\Amn.gif');
+  Image12.Picture.LoadFromFile('images\Sol.gif');
+  Image13.Picture.LoadFromFile('images\Shael.gif');
+  Image14.Picture.LoadFromFile('images\Dol.gif');
+  Image15.Picture.LoadFromFile('images\Hel.gif');
+  Image16.Picture.LoadFromFile('images\Io.gif');
+  Image17.Picture.LoadFromFile('images\Lum.gif');
+  Image18.Picture.LoadFromFile('images\Ko.gif');
+  Image19.Picture.LoadFromFile('images\Fal.gif');
+  Image20.Picture.LoadFromFile('images\Lem.gif');
+  Image21.Picture.LoadFromFile('images\Pul.gif');
+  Image22.Picture.LoadFromFile('images\Um.gif');
+  Image23.Picture.LoadFromFile('images\Mal.gif');
+  Image24.Picture.LoadFromFile('images\Ist.gif');
+  Image25.Picture.LoadFromFile('images\Gul.gif');
+  Image26.Picture.LoadFromFile('images\Vex.gif');
+  Image27.Picture.LoadFromFile('images\Ohm.gif');
+  Image28.Picture.LoadFromFile('images\Lo.gif');
+  Image29.Picture.LoadFromFile('images\Sur.gif');
+  Image30.Picture.LoadFromFile('images\Ber.gif');
+  Image31.Picture.LoadFromFile('images\Jah.gif');
+  Image32.Picture.LoadFromFile('images\Cham.gif');
+  Image33.Picture.LoadFromFile('images\Zod.gif');
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);

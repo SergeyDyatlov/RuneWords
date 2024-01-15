@@ -15,6 +15,237 @@ object Form1: TForm1
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
+  object Image1: TImage
+    Left = 351
+    Top = 17
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image2: TImage
+    Left = 351
+    Top = 60
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image3: TImage
+    Left = 351
+    Top = 103
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image4: TImage
+    Left = 351
+    Top = 146
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image5: TImage
+    Left = 351
+    Top = 190
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image6: TImage
+    Left = 351
+    Top = 233
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image7: TImage
+    Left = 351
+    Top = 276
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image8: TImage
+    Left = 351
+    Top = 320
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image9: TImage
+    Left = 351
+    Top = 363
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image10: TImage
+    Left = 351
+    Top = 406
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image11: TImage
+    Left = 351
+    Top = 450
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image12: TImage
+    Left = 551
+    Top = 17
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image13: TImage
+    Left = 551
+    Top = 60
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image14: TImage
+    Left = 551
+    Top = 103
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image15: TImage
+    Left = 551
+    Top = 146
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image16: TImage
+    Left = 551
+    Top = 190
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image17: TImage
+    Left = 551
+    Top = 233
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image18: TImage
+    Left = 551
+    Top = 276
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image19: TImage
+    Left = 551
+    Top = 320
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image20: TImage
+    Left = 551
+    Top = 363
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image21: TImage
+    Left = 551
+    Top = 406
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image22: TImage
+    Left = 551
+    Top = 450
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image23: TImage
+    Left = 751
+    Top = 233
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image24: TImage
+    Left = 751
+    Top = 450
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image25: TImage
+    Left = 751
+    Top = 406
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image26: TImage
+    Left = 751
+    Top = 363
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image27: TImage
+    Left = 751
+    Top = 320
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image28: TImage
+    Left = 751
+    Top = 276
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image29: TImage
+    Left = 751
+    Top = 190
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image30: TImage
+    Left = 751
+    Top = 146
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image31: TImage
+    Left = 751
+    Top = 103
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image32: TImage
+    Left = 751
+    Top = 60
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
+  object Image33: TImage
+    Left = 751
+    Top = 17
+    Width = 32
+    Height = 32
+    Stretch = True
+  end
   object Memo1: TMemo
     Left = 8
     Top = 8
