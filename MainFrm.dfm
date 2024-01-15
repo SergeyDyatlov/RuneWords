@@ -1,9 +1,11 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 540
-  ClientWidth = 960
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'RuneWords'
+  ClientHeight = 550
+  ClientWidth = 970
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,252 +13,255 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage
-    Left = 351
-    Top = 17
+    Left = 375
+    Top = 41
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image2: TImage
-    Left = 351
-    Top = 60
+    Left = 375
+    Top = 84
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image3: TImage
-    Left = 351
-    Top = 103
+    Left = 375
+    Top = 127
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image4: TImage
-    Left = 351
-    Top = 146
+    Left = 375
+    Top = 170
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image5: TImage
-    Left = 351
-    Top = 190
+    Left = 375
+    Top = 214
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image6: TImage
-    Left = 351
-    Top = 233
+    Left = 375
+    Top = 257
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image7: TImage
-    Left = 351
-    Top = 276
+    Left = 375
+    Top = 300
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image8: TImage
-    Left = 351
-    Top = 320
+    Left = 375
+    Top = 344
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image9: TImage
-    Left = 351
-    Top = 363
+    Left = 375
+    Top = 387
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image10: TImage
-    Left = 351
-    Top = 406
+    Left = 375
+    Top = 430
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image11: TImage
-    Left = 351
-    Top = 450
+    Left = 375
+    Top = 474
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image12: TImage
-    Left = 551
-    Top = 17
+    Left = 575
+    Top = 41
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image13: TImage
-    Left = 551
-    Top = 60
+    Left = 575
+    Top = 84
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image14: TImage
-    Left = 551
-    Top = 103
+    Left = 575
+    Top = 127
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image15: TImage
-    Left = 551
-    Top = 146
+    Left = 575
+    Top = 170
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image16: TImage
-    Left = 551
-    Top = 190
+    Left = 575
+    Top = 214
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image17: TImage
-    Left = 551
-    Top = 233
+    Left = 575
+    Top = 257
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image18: TImage
-    Left = 551
-    Top = 276
+    Left = 575
+    Top = 300
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image19: TImage
-    Left = 551
-    Top = 320
+    Left = 575
+    Top = 344
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image20: TImage
-    Left = 551
-    Top = 363
+    Left = 575
+    Top = 387
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image21: TImage
-    Left = 551
-    Top = 406
+    Left = 575
+    Top = 430
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image22: TImage
-    Left = 551
-    Top = 450
+    Left = 575
+    Top = 474
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image23: TImage
-    Left = 751
-    Top = 233
+    Left = 775
+    Top = 257
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image24: TImage
-    Left = 751
-    Top = 450
+    Left = 775
+    Top = 474
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image25: TImage
-    Left = 751
-    Top = 406
+    Left = 775
+    Top = 430
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image26: TImage
-    Left = 751
-    Top = 363
+    Left = 775
+    Top = 387
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image27: TImage
-    Left = 751
-    Top = 320
+    Left = 775
+    Top = 344
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image28: TImage
-    Left = 751
-    Top = 276
+    Left = 775
+    Top = 300
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image29: TImage
-    Left = 751
-    Top = 190
+    Left = 775
+    Top = 214
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image30: TImage
-    Left = 751
-    Top = 146
+    Left = 775
+    Top = 170
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image31: TImage
-    Left = 751
-    Top = 103
+    Left = 775
+    Top = 127
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image32: TImage
-    Left = 751
-    Top = 60
+    Left = 775
+    Top = 84
     Width = 32
     Height = 32
     Stretch = True
   end
   object Image33: TImage
-    Left = 751
-    Top = 17
+    Left = 775
+    Top = 41
     Width = 32
     Height = 32
     Stretch = True
   end
   object Memo1: TMemo
-    Left = 8
-    Top = 8
-    Width = 321
-    Height = 524
+    Left = 16
+    Top = 16
+    Width = 313
+    Height = 516
+    BorderStyle = bsNone
+    ReadOnly = True
     ScrollBars = ssBoth
     TabOrder = 0
   end
   object CheckBox1: TCheckBox
-    Left = 400
-    Top = 24
+    Left = 424
+    Top = 48
     Width = 97
     Height = 17
     Caption = 'El'
@@ -270,8 +275,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox2: TCheckBox
-    Left = 400
-    Top = 67
+    Left = 424
+    Top = 91
     Width = 97
     Height = 17
     Caption = 'Eld'
@@ -285,8 +290,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox3: TCheckBox
-    Left = 400
-    Top = 110
+    Left = 424
+    Top = 134
     Width = 97
     Height = 17
     Caption = 'Tir'
@@ -300,8 +305,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox4: TCheckBox
-    Left = 400
-    Top = 153
+    Left = 424
+    Top = 177
     Width = 97
     Height = 17
     Caption = 'Nef'
@@ -315,8 +320,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox5: TCheckBox
-    Left = 400
-    Top = 196
+    Left = 424
+    Top = 220
     Width = 97
     Height = 17
     Caption = 'Eth'
@@ -330,8 +335,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox6: TCheckBox
-    Left = 400
-    Top = 240
+    Left = 424
+    Top = 264
     Width = 97
     Height = 17
     Caption = 'Ith'
@@ -345,8 +350,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox7: TCheckBox
-    Left = 400
-    Top = 283
+    Left = 424
+    Top = 307
     Width = 97
     Height = 17
     Caption = 'Tal'
@@ -360,8 +365,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox8: TCheckBox
-    Left = 400
-    Top = 326
+    Left = 424
+    Top = 350
     Width = 97
     Height = 17
     Caption = 'Ral'
@@ -375,8 +380,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox9: TCheckBox
-    Left = 400
-    Top = 369
+    Left = 424
+    Top = 393
     Width = 97
     Height = 17
     Caption = 'Ort'
@@ -390,8 +395,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox10: TCheckBox
-    Left = 400
-    Top = 412
+    Left = 424
+    Top = 436
     Width = 97
     Height = 17
     Caption = 'Thul'
@@ -405,8 +410,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox11: TCheckBox
-    Left = 400
-    Top = 456
+    Left = 424
+    Top = 480
     Width = 97
     Height = 17
     Caption = 'Amn'
@@ -420,8 +425,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox12: TCheckBox
-    Left = 600
-    Top = 24
+    Left = 624
+    Top = 48
     Width = 97
     Height = 17
     Caption = 'Sol'
@@ -435,8 +440,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox13: TCheckBox
-    Left = 600
-    Top = 67
+    Left = 624
+    Top = 91
     Width = 97
     Height = 17
     Caption = 'Shael'
@@ -450,8 +455,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox14: TCheckBox
-    Left = 600
-    Top = 110
+    Left = 624
+    Top = 134
     Width = 97
     Height = 17
     Caption = 'Dol'
@@ -465,8 +470,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox15: TCheckBox
-    Left = 600
-    Top = 153
+    Left = 624
+    Top = 177
     Width = 97
     Height = 17
     Caption = 'Hel'
@@ -480,8 +485,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox16: TCheckBox
-    Left = 600
-    Top = 196
+    Left = 624
+    Top = 220
     Width = 97
     Height = 17
     Caption = 'Io'
@@ -495,8 +500,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox17: TCheckBox
-    Left = 600
-    Top = 240
+    Left = 624
+    Top = 264
     Width = 97
     Height = 17
     Caption = 'Lum'
@@ -510,8 +515,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox18: TCheckBox
-    Left = 600
-    Top = 283
+    Left = 624
+    Top = 307
     Width = 97
     Height = 17
     Caption = 'Ko'
@@ -525,8 +530,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox19: TCheckBox
-    Left = 600
-    Top = 326
+    Left = 624
+    Top = 350
     Width = 97
     Height = 17
     Caption = 'Fal'
@@ -540,8 +545,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox20: TCheckBox
-    Left = 600
-    Top = 369
+    Left = 624
+    Top = 393
     Width = 97
     Height = 17
     Caption = 'Lem'
@@ -555,8 +560,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox21: TCheckBox
-    Left = 600
-    Top = 412
+    Left = 624
+    Top = 436
     Width = 97
     Height = 17
     Caption = 'Pul'
@@ -570,8 +575,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox22: TCheckBox
-    Left = 600
-    Top = 456
+    Left = 624
+    Top = 480
     Width = 97
     Height = 17
     Caption = 'Um'
@@ -585,8 +590,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox23: TCheckBox
-    Left = 800
-    Top = 24
+    Left = 824
+    Top = 48
     Width = 97
     Height = 17
     Caption = 'Mal'
@@ -600,8 +605,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox24: TCheckBox
-    Left = 800
-    Top = 67
+    Left = 824
+    Top = 91
     Width = 97
     Height = 17
     Caption = 'Ist'
@@ -615,8 +620,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox25: TCheckBox
-    Left = 800
-    Top = 110
+    Left = 824
+    Top = 134
     Width = 97
     Height = 17
     Caption = 'Gul'
@@ -630,8 +635,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox26: TCheckBox
-    Left = 800
-    Top = 153
+    Left = 824
+    Top = 177
     Width = 97
     Height = 17
     Caption = 'Vex'
@@ -645,8 +650,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox27: TCheckBox
-    Left = 800
-    Top = 196
+    Left = 824
+    Top = 220
     Width = 97
     Height = 17
     Caption = 'Ohm'
@@ -660,8 +665,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox28: TCheckBox
-    Left = 800
-    Top = 240
+    Left = 824
+    Top = 264
     Width = 97
     Height = 17
     Caption = 'Lo'
@@ -675,8 +680,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox29: TCheckBox
-    Left = 800
-    Top = 283
+    Left = 824
+    Top = 307
     Width = 97
     Height = 17
     Caption = 'Sur'
@@ -690,8 +695,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox30: TCheckBox
-    Left = 800
-    Top = 326
+    Left = 824
+    Top = 350
     Width = 97
     Height = 17
     Caption = 'Ber'
@@ -705,8 +710,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox31: TCheckBox
-    Left = 800
-    Top = 369
+    Left = 824
+    Top = 393
     Width = 97
     Height = 17
     Caption = 'Jah'
@@ -720,8 +725,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox32: TCheckBox
-    Left = 800
-    Top = 412
+    Left = 824
+    Top = 436
     Width = 97
     Height = 17
     Caption = 'Cham'
@@ -735,8 +740,8 @@ object Form1: TForm1
     OnClick = CheckBox1Click
   end
   object CheckBox33: TCheckBox
-    Left = 800
-    Top = 456
+    Left = 824
+    Top = 480
     Width = 97
     Height = 17
     Caption = 'Zod'
