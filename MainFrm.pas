@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   System.Generics.Collections, GameItems, Vcl.StdCtrls, ItemsLoader,
-  Vcl.ExtCtrls, Vcl.Imaging.GIFImg;
+  Vcl.ExtCtrls, Vcl.Imaging.GIFImg, StrUtils;
 
 type
   TForm1 = class(TForm)
@@ -77,15 +77,20 @@ type
     Image31: TImage;
     Image32: TImage;
     Image33: TImage;
+    ComboBox1: TComboBox;
+    Label1: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure CheckBox1Click(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
     FLoader: TItemsLoader;
     function GetSelectedRunes: TArray<string>;
   public
     { Public declarations }
+    procedure RefillItems;
     property SelectedRunes: TArray<string> read GetSelectedRunes;
   end;
 
@@ -97,21 +102,13 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.CheckBox1Click(Sender: TObject);
-var
-  FilteredItems: TArray<TGameItem>;
-  Descriptions: TStringList;
 begin
-  Descriptions := TStringList.Create;
-  try
-    FilteredItems := FLoader.FilterItems(SelectedRunes);
-    for var Item in FilteredItems do
-    begin
-      Descriptions.Add(Item.Description);
-    end;
-    Memo1.Text := Descriptions.Text;
-  finally
-    Descriptions.Free;
-  end;
+  RefillItems;
+end;
+
+procedure TForm1.ComboBox1Change(Sender: TObject);
+begin
+  RefillItems;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -159,6 +156,11 @@ begin
   FLoader.Free;
 end;
 
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  RefillItems;
+end;
+
 function TForm1.GetSelectedRunes: TArray<string>;
 var
   SelectedRunes: TStringList;
@@ -166,16 +168,54 @@ var
 begin
   SelectedRunes := TStringList.Create;
   try
-    for i := 0 to ComponentCount - 1 do
+    for I := 0 to ComponentCount - 1 do
     begin
-      if (Components[i] is TCheckBox) and (TCheckBox(Components[i]).Checked) then
+      if (Components[I] is TCheckBox) and (TCheckBox(Components[I]).Checked) then
       begin
-        SelectedRunes.Add(TCheckBox(Components[i]).Caption);
+        SelectedRunes.Add(TCheckBox(Components[I]).Caption);
       end;
     end;
     Result := SelectedRunes.ToStringArray;
   finally
     SelectedRunes.Free;
+  end;
+end;
+
+procedure TForm1.RefillItems;
+var
+  AnyRunesSelected: Boolean;
+  FilterTextNotEmpty: Boolean;
+  FilteredItems: TArray<TGameItem>;
+  Descriptions: TStringList;
+begin
+  AnyRunesSelected := Length(SelectedRunes) > 0;
+  FilterTextNotEmpty := Length(ComboBox1.Text) > 0;
+
+  FilteredItems := FLoader.Filter(
+    function(Item: TGameItem): Boolean
+    begin
+      Result := True;
+
+      if AnyRunesSelected and FilterTextNotEmpty then
+      begin
+        Result := Item.HasAllRequiredRunes(SelectedRunes) and
+          ContainsText(Item.Description, ComboBox1.Text);
+      end
+      else if AnyRunesSelected then
+        Result := Item.HasAllRequiredRunes(SelectedRunes)
+      else if FilterTextNotEmpty then
+        Result := ContainsText(Item.Description, ComboBox1.Text);
+    end);
+
+  Descriptions := TStringList.Create;
+  try
+    for var Item in FilteredItems do
+    begin
+      Descriptions.Add(Item.Description);
+    end;
+    Memo1.Text := Descriptions.Text;
+  finally
+    Descriptions.Free;
   end;
 end;
 

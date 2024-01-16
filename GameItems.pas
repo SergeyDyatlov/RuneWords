@@ -14,7 +14,7 @@ type
     constructor Create(const ADescription: string);
     destructor Destroy; override;
     function ExtractRunes: TArray<string>;
-    function HasRequiredRunes(const RequiredRunes: TArray<string>): Boolean;
+    function HasAllRequiredRunes(const RequiredRunes: TArray<string>): Boolean;
     property Description: string read GetDescription;
   end;
 
@@ -64,7 +64,7 @@ begin
   Result := FDescription.Text;
 end;
 
-function TGameItem.HasRequiredRunes(const RequiredRunes
+function TGameItem.HasAllRequiredRunes(const RequiredRunes
   : TArray<string>): Boolean;
 var
   ItemRunes: TArray<string>;

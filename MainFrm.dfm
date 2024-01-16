@@ -9,15 +9,16 @@ object Form1: TForm1
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -13
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
+  OnShow = FormShow
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 16
   object Image1: TImage
     Left = 375
     Top = 41
@@ -249,11 +250,18 @@ object Form1: TForm1
     Height = 32
     Stretch = True
   end
+  object Label1: TLabel
+    Left = 16
+    Top = 14
+    Width = 163
+    Height = 16
+    Caption = #1055#1086#1080#1089#1082' '#1087#1086' '#1082#1083#1102#1095#1077#1074#1099#1084' '#1089#1083#1086#1074#1072#1084
+  end
   object Memo1: TMemo
     Left = 16
-    Top = 16
+    Top = 72
     Width = 313
-    Height = 516
+    Height = 460
     BorderStyle = bsNone
     ReadOnly = True
     ScrollBars = ssBoth
@@ -753,5 +761,13 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 33
     OnClick = CheckBox1Click
+  end
+  object ComboBox1: TComboBox
+    Left = 16
+    Top = 33
+    Width = 313
+    Height = 24
+    TabOrder = 34
+    OnChange = ComboBox1Change
   end
 end

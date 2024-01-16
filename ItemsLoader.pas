@@ -13,7 +13,7 @@ type
     constructor Create;
     destructor Destroy; override;
     procedure LoadFromFile(const FileName: string);
-    function FilterItems(Runes: TArray<string>): TArray<TGameItem>;
+    function Filter(Accept: TFunc<TGameItem, Boolean>): TArray<TGameItem>;
     property Items: TObjectList<TGameItem> read FItems;
   end;
 
@@ -32,7 +32,8 @@ begin
   inherited;
 end;
 
-function TItemsLoader.FilterItems(Runes: TArray<string>): TArray<TGameItem>;
+function TItemsLoader.Filter(Accept: TFunc<TGameItem, Boolean>)
+  : TArray<TGameItem>;
 var
   Items: TList<TGameItem>;
 begin
@@ -40,7 +41,7 @@ begin
   try
     for var Item in FItems do
     begin
-      if Item.HasRequiredRunes(Runes) then
+      if Accept(Item) then
         Items.Add(Item);
     end;
     Result := Items.ToArray;
